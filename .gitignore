@@ -1,0 +1,11 @@
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore uploaded 3D model files
+uploads/
+
+# Ignore system files
+.DS_Store
+
+# Ignore environment files (if you have any)
+.env

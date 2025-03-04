@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3D Model Uploader</title>
+</head>
+<body>
+  <h1>Upload a 3D Model</h1>
+  <form id="uploadForm">
+    <input type="file" name="model" accept=".obj,.fbx" required />
+    <button type="submit">Upload Model</button>
+  </form>
+  <p id="response"></p>
+
+  <script>
+    const uploadForm = document.getElementById('uploadForm');
+    const responseP = document.getElementById('response');
+
+    uploadForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const fileInput = uploadForm.querySelector('input[type=file]');
+      const formData = new FormData();
+      formData.append('model', fileInput.files[0]);
+
+      const res = await fetch('http://localhost:3001/api/upload-model', {  // Use port 3001 to match your server
+        method: 'POST',
+        body: formData
+      });
+      const data = await res.json();
+      responseP.innerText = JSON.stringify(data);
+    });
+  </script>
+</body>
+</html>
