@@ -22,13 +22,11 @@ A proof-of-concept for integrating a fake AI service (local LLM simulation) and 
 
   - ![Unity model loading](./public/fakemodel.png "Unity model loading")
 
-This repository demonstrates:
+
 - **Local "AI" Integration**: Simulates an LLM endpoint (a simple "echo" server) to show how Unity can send/receive data using HTTP.
 - **3D Model Upload & Download**: Allows users to upload `.obj` models via a web interface (Node.js + HTML) and download them at runtime in Unity.
 - **Basic Full-Stack Workflow**: Showcases Node.js handling both text-based AI routes and file uploads, while Unity calls these endpoints and updates the UI.
 
-### Why is this useful?
-It mimics the **AICore** concept (running AI models locally and integrating them into real-time applications) and **ViewPort** concept (uploading 3D assets for cross-platform display). Recruiters can see how you handle **both** sides of a real-time interactive project.
 
 ## Features
 1. **Fake LLM Endpoint**
