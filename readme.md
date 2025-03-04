@@ -15,6 +15,13 @@ A proof-of-concept for integrating a fake AI service (local LLM simulation) and 
 
 ## Overview
 
+
+ - ![website interface](./public/website.png "website interface")
+
+ - ![Unity AI response](./public/fakellm.png "Unity AI response")
+
+  - ![Unity model loading](./public/fakemodel.png "Unity model loading")
+
 This repository demonstrates:
 - **Local "AI" Integration**: Simulates an LLM endpoint (a simple "echo" server) to show how Unity can send/receive data using HTTP.
 - **3D Model Upload & Download**: Allows users to upload `.obj` models via a web interface (Node.js + HTML) and download them at runtime in Unity.
